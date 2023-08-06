@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5px;
+
+    background-color: #415a9a;
+}
+
+#nav .left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 150px;
+
+    color:#fff;
+}
+
+#nav .right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nav form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    color: #fff;
+    line-height:25px;
+}
+
+.have-acc{
+    width: 200px;
+}
+
+#nav form input{
+    margin-right: 15px;
+}
+
+#nav form a{
+    text-decoration: none;
+    color: #8c9cce;
+    font-size: 0.8rem;
+}
+
+#nav form button{
+    border: 0;
+    border-radius: 5px;
+    min-width: 50px;
+    height: 30px;
+    margin-top: 24px;
+    background: #4665af;
+    color: #fff;
+    font-weight: 900;
+}
+
+#page{
+    display: flex;
+    width: 100%;
+}
+
+#page .left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 150px;
+}
+
+#page .left h3{
+    color:#1f3853;
+    margin-top: 50px;
+    font-size: 1.7rem;
+}
+
+#page .right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+
+#page .right h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#page .right h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#page .right form{
+    box-sizing: border-box;
+    width: 393px;
+}
+
+#page .right form input{
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#page .right form .first{
+    margin-right: 10px;
+}
+
+#page .right form .names{
+    margin-bottom: 20px;
+}
+
+#page .right form .rest input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 370px;
+    margin-top: 10px;
+}
+
+#page .right h4{
+    margin: 0;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.date .date-box{
+    display: flex;
+}
+
+.date-box div{
+    margin-left: 20px;
+    width: 180px;
+}
+
+.date-box a{
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.date .radio{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.create{
+    font-size: 0.8rem;
+    width: 350px;
+}
+
+.create-btn{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color: #39592c;
+    color: white;
+    border-radius: 3px;
+}
+
+/* media */
+@media(max-width:768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    /* need edit */
+    #nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+
+    #nav .left{
+        padding: 0;
+        align-items: center;
+    }
+
+    #nav .right{
+        align-items: center;
+    }
+
+    .have-acc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav form input{
+        margin: 0;
+    }
+
+    #nav form button{
+        margin: 0;
+    }
+
+    #page{
+        flex-direction: column;
+    }
+
+    #page .left{
+        display: none;
+    }
+    
+    #page .right{
+        padding-left: 10%;
+        padding-bottom: 5%;
+    }
+}
+
+@media(max-width:1240px){
+
+    #nav{
+        width: 100%;
+    }
+
+    #nav .left{
+        padding: 0;
+        padding-left: 5%;
+    }
+
+    #nav form{
+        padding-right: 5%;
+    }
+    #page{
+        flex-direction: row;
+    }
+
+    #page .left{
+        padding: 0;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+    
+    #page .right{
+        padding-bottom: 5%;
+    }
+}
+
